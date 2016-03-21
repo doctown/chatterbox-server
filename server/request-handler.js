@@ -71,3 +71,5 @@ var defaultCorsHeaders = {
   'access-control-max-age': 10 // Seconds.
 };
 
+// Exporting only one function
+module.exports = requestHandler;
