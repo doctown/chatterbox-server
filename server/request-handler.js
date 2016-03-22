@@ -51,7 +51,7 @@ var requestHandler = function(request, response) {
       request.on('end', function (chunk) {
         // Send an acknowledgment 200 OK response for now
         body = Buffer.concat(body).toString();
-        console.log(body);
+        //console.log(body);
         dataStorage.push(JSON.parse(body));
         response.writeHead(201, "OK", {'Content-Type': 'text/html'});
         response.end();
